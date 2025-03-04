@@ -1,0 +1,267 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+  margin-right: 0.5rem;
+  border-radius: 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0A2740;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: #ffffff;
+  font-size: 30px;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar .cita {
+  background-color: #bde2f1;
+  color:  #0d0f0f;
+}
+
+.cita {
+  background-color: #bde2f1;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+
+.navbar .cita:hover {
+  background-color: #CCC;
+  transition: background-color 0.3s ease; 
+}
+
+
+
+
+/* Sections */
+
+#servicios {
+  background-color: #f7f9fc;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+#servicios h2 {
+  font-size: 2.5rem;
+  color: #164673;
+  margin-bottom: 2rem;
+}
+.servicios-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  flex: 1;
+  max-width: 350px;
+  text-align: center;
+}
+.about-card h3 {
+  font-size: 1.5rem; /* Titulo */
+  color:#164673;
+  margin-bottom: 1rem;
+}
+
+.about-card p {
+  color: #0d0f0f;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: bold;
+  
+}
+
+.bottom-image {
+  width: 100%; /* Para que todas ocupen el mismo ancho */
+  height: 200px; /* Ajusta según lo necesites */
+  object-fit: cover; /* Recorta la imagen sin deformarla */
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.about-card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #e3f2fd;
+}
+#productos {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ECF3FB;
+}
+#productos h2{ 
+	font-size: 2.5rem; /* Titulo */
+  	color: #164673;
+  	margin-bottom: 2rem;
+}
+.producto-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.producto-list h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #164673;
+}
+
+#productos .producto-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#productos .producto {
+    flex: 1 1 280px; 
+    max-width: 250px; 
+    aspect-ratio: 1 / 1.2;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#productos .producto:hover{
+    transform: translateY(-5px);
+    background-color: #94B3C9; 
+    h3{
+     color: #FFFFFF;
+    }
+ 
+}
+
+.producto-list img {
+    width: 100%;
+    height: auto;
+    max-height: 180px; 
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.producto h3 {
+    color: #164673;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#registro-cita {
+    background-color: #f7f9fc;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#registro-cita h2 {
+    font-size: 2.5rem;
+    color: #164673;
+    margin-bottom: 2rem;
+}
+
+#registro-cita .container {
+    max-width: 600px;
+    background: #ffffff;
+    padding: 2rem;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#registro-cita label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #164673;
+    display: block;
+    margin-top: 10px;
+}
+
+#registro-cita input,
+#registro-cita select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+#registro-cita input:focus,
+#registro-cita select:focus {
+    border-color: #164673;
+    box-shadow: 0 0 5px rgba(22, 70, 115, 0.5);
+    outline: none;
+}
+
+
+#registro-cita button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #164673;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#registro-cita button:hover {
+    background-color: #0A2740;
+}
