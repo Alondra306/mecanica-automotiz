@@ -3,7 +3,7 @@ administracion de la mecanica automotriz
 
 Proyecto completo
 
-CitasCliente: Carmen Lizeth y Paulina de la Torre
+client-landing: Carmen Lizeth y Paulina de la Torre
 
 login-service: Alondra Armenta
 
