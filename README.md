@@ -1,7 +1,7 @@
 # mecanica-automotiz
 administracion de la mecanica automotriz
 
-Proyecto completo
+Proyecto completo: MecanicaCUT.zip
 
 client-landing: Carmen Lizeth y Paulina de la Torre
 
