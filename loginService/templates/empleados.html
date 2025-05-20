@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>empleados</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesR.css') }}">
+</head>
+<body>
+    <div class="container">
+
+        <h1>Registro de Empleados</h1>
+
+        <form method="POST" action="{{ url_for('registro') if not empleado else url_for('editar_empleado', rfc=empleado['rfc']) }}">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" value="{{ empleado['nombre'] if empleado else '' }}" required><br>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" value="{{ empleado['apellido'] if empleado else '' }}" required><br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" value="{{ empleado['telefono'] if empleado else '' }}" required><br>
+
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" value="{{ empleado['fecha_nacimiento'] if empleado else '' }}" required><br>
+
+            <label for="rfc">RFC:</label>
+            <input type="text" id="rfc" name="rfc" maxlength="13" value="{{ empleado['rfc'] if empleado else '' }}" {% if empleado %}readonly{% endif %} required><br>
+
+            <label for="cargo">Cargo:</label>
+            <select id="cargo" name="cargo">
+                {% set cargo_actual = empleado['cargo'] if empleado else '' %}
+                <option value="Mecanico" {% if cargo_actual == 'Mecanico' %}selected{% endif %}>Mecánico</option>
+                <option value="Administrador" {% if cargo_actual == 'Administrador' %}selected{% endif %}>Administrador</option>
+                <option value="Recepsionita" {% if cargo_actual == 'Recepsionita' %}selected{% endif %}>Recepcionista</option>
+                <option value="Contador" {% if cargo_actual == 'Contador' %}selected{% endif %}>Contador</option>
+                <option value="Otro" {% if cargo_actual == 'Otro' %}selected{% endif %}>Otro</option>
+            </select><br><br>
+
+            <label for="genero">Género:</label><br>
+            <input type="radio" id="masculino" name="genero" value="Masculino" {% if empleado and empleado['genero'] == 'Masculino' %}checked{% endif %} required>
+            <label for="masculino">Masculino</label><br>
+            <input type="radio" id="femenino" name="genero" value="Femenino" {% if empleado and empleado['genero'] == 'Femenino' %}checked{% endif %} required>
+            <label for="femenino">Femenino</label><br><br>
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" value="{{ empleado['correo'] if empleado else '' }}" required><br>
+
+            {% if not empleado %}
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required><br>
+            {% endif %}
+
+            <button type="submit">{{ 'Actualizar' if empleado else 'Registrar' }}</button>
+        </form>
+
+    </div>
+</body>
+</html>

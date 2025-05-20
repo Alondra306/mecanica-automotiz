@@ -1,0 +1,82 @@
+body {
+    background:  #3a668f;
+  
+    color: rgb(54, 52, 52);
+    font: 15px Arial;
+    margin: 0 auto;
+    padding: 0;
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+    margin: 25px auto;
+    padding: 40px;
+    width: 800px;
+    text-align: center;
+}
+
+form {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    padding: 25px;
+    border: 1px solid #c4c6ca;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+    box-shadow: 0 1px 0 #fff inset;
+}
+
+form input{
+    width: 95%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #c8c8c8;
+    border-radius: 5px;
+    font-size: 13px;
+    color: #777;
+    box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0,0,0,0.08) inset;
+}
+
+form select{
+    border: 1px solid #c8c8c8;
+    border-radius: 5px;
+    font-size: 13px;
+    color: #0a0a0a;
+    box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0,0,0,0.08) inset;
+}
+
+form textarea{
+    width: 95%;
+    border: 1px solid #c8c8c8;
+    border-radius: 5px;
+    font-size: 13px;
+    color: #050505;   
+    box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0,0,0,0.08) inset;
+}
+
+#masculino{
+    width: 5%;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+#femenino{
+    width: 5%;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+form button{
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #164673;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out        /* Cambia el cursor cuando pasa por encima */
+}
+   
