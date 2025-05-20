@@ -7,6 +7,8 @@ client-landing: Carmen Lizeth y Paulina de la Torre
 
 login-service: Alondra Armenta
 
+registro de empleados: Alondra Armenta
+
 cita-empleado-service: Alejandro Migael
 
 Servicio de correo : Alejandro Migael
